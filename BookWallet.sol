@@ -14,7 +14,7 @@ contract BookWallet{
     // user add new book on his book wallet
     function addNewBook(uint8 _id , string memory _title, string memory _author) public {
         
-        // take the book details and sender address add it to his book wallet
+        // take the book details and add in sender book wallet
         book[msg.sender][_id] = Book(_title,_author);
     }
     
