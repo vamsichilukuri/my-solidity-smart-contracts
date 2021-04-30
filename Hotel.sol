@@ -18,7 +18,7 @@ contract Hotel{
     }
     
     modifier onlyVacant(){
-        require(CurrentStatus == Statuses.Vacant , 'Hotel room occupied');
+        require(CurrentStatus == Statuses.Vacant , 'Hotel room is occupied');
         _;
     }
     
